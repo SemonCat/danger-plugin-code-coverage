@@ -58,7 +58,7 @@ export function codeCoverage(
           )
         );
 
-      markdown(`# ${options.title}\n${generateMarkdownTable(coverageTable)}`);
+      markdown(`\n# ${options.title}\n${generateMarkdownTable(coverageTable)}`);
     } catch (error) {
       fail(
         `An error occurred when getting the code coverage: ${error.message}. Danger exits with code: ${error.code}`
